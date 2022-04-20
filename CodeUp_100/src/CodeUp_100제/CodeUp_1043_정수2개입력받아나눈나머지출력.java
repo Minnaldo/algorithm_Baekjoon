@@ -5,19 +5,23 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
-public class CodeUp_1041_문자1개입력받아다음문자출력하기 {
+public class CodeUp_1043_정수2개입력받아나눈나머지출력 {
 
-	public static void main(String[] args) throws NumberFormatException, IOException {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		String str = br.readLine();
+		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		char c = str.charAt(0);
+		long num1 = Long.parseLong(st.nextToken());
+		long num2 = Long.parseLong(st.nextToken());
 		
-		System.out.println((char)(c+1));
+		long remainder = num1 % num2;
+		
+		System.out.println(remainder);
 	}
 
 }

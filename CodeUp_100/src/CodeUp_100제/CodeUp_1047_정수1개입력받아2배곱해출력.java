@@ -6,18 +6,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class CodeUp_1041_문자1개입력받아다음문자출력하기 {
+public class CodeUp_1047_정수1개입력받아2배곱해출력 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		String str = br.readLine();
+		long N = Long.parseLong(br.readLine());
 		
-		char c = str.charAt(0);
-		
-		System.out.println((char)(c+1));
+		System.out.println(N*2);
 	}
 
 }
