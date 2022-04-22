@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class CodeUp_1049_두정수입력받아비교하기1 {
+public class CodeUp_1068_정수1개입력받아평가출력하기 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -16,12 +16,15 @@ public class CodeUp_1049_두정수입력받아비교하기1 {
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		long num1 = Long.parseLong(st.nextToken());
-		long num2 = Long.parseLong(st.nextToken());
 		
-		if(num1 > num2)
-			System.out.println(1);
-		else
-			System.out.println(0);
+		if(num1 >= 90 && num1 <= 100)
+			System.out.println("A");
+		else if(num1 >= 70 && num1 <= 89)
+			System.out.println("B");
+		else if(num1 >= 40 && num1 <= 69)
+			System.out.println("C");
+		else if(num1 >= 00 && num1 <= 39)
+			System.out.println("D");
 	}
 
 }
